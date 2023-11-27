@@ -11,15 +11,3 @@ const JsonData = fetch("./data.json")
 .catch(error => {
   console.error('There was a problem with the fetch operation:', error);
 });
-
-
-function userInputs(){
-  const userInputs = document.getElementById("comment").value;
-  // console.log("user Comments",userInputs)
-  let div = document.createElement("div");
-  let h6 = document.createElement("h6");
-  h6.textContent = userInputs;
-  div.appendChild(h6);
-  let container = document.querySelector(".comments-container");
-  container.appendChild(div);
-}
